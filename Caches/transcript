@@ -1,0 +1,813 @@
+# //  Questa Sim-64
+# //  Version 10.3b linux_x86_64 May 29 2014
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+vlin work
+# invalid command name "vlin"
+vlib work
+vlog control_unit.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 10:14:16 on Sep 15,2016
+# vlog -reportprogress 300 control_unit.sv 
+# ** Error: control_unit.sv(1): Cannot find `include file "cpu_types_pkg.vh" in directories:
+#     /package/eda/mg/questa10.3b/questasim/ovm-2.1.2/../verilog_src/ovm-2.1.2/src, /package/eda/mg/questa10.3b/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src
+# ** Error: control_unit.sv(2): Cannot find `include file "control_unit_if.vh" in directories:
+#     /package/eda/mg/questa10.3b/questasim/ovm-2.1.2/../verilog_src/ovm-2.1.2/src, /package/eda/mg/questa10.3b/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src
+# ** Error: control_unit.sv(3): (vlog-13006) Could not find the package (cpu_types_pkg).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
+# ** Error: control_unit.sv(58): (vlog-2730) Undefined variable: 'NOP'.
+# ** Error: control_unit.sv(61): near "function": syntax error, unexpected function
+# ** Error: control_unit.sv(73): (vlog-2730) Undefined variable: 'ALU_ADDU'.
+# ** Error: control_unit.sv(79): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: control_unit.sv(79): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(91): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: control_unit.sv(91): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(103): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: control_unit.sv(103): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(115): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: control_unit.sv(115): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(128): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: control_unit.sv(128): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(140): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: control_unit.sv(140): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(152): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: control_unit.sv(152): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(165): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: control_unit.sv(165): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(177): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: control_unit.sv(177): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(189): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: control_unit.sv(189): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(201): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: control_unit.sv(201): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(214): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: control_unit.sv(214): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER
+# End time: 10:14:16 on Sep 15,2016, Elapsed time: 0:00:00
+# Errors: 30, Warnings: 0
+# /package/eda/mg/questa10.3b/questasim/linux_x86_64/vlog failed.
+vlog control_unit.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 10:16:26 on Sep 15,2016
+# vlog -reportprogress 300 control_unit.sv 
+# ** Error: control_unit.sv(1): Cannot find `include file "cpu_types_pkg.vh" in directories:
+#     /package/eda/mg/questa10.3b/questasim/ovm-2.1.2/../verilog_src/ovm-2.1.2/src, /package/eda/mg/questa10.3b/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src
+# ** Error: control_unit.sv(2): Cannot find `include file "control_unit_if.vh" in directories:
+#     /package/eda/mg/questa10.3b/questasim/ovm-2.1.2/../verilog_src/ovm-2.1.2/src, /package/eda/mg/questa10.3b/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src
+# ** Error: control_unit.sv(3): (vlog-13006) Could not find the package (cpu_types_pkg).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
+# ** Error: control_unit.sv(64): (vlog-2730) Undefined variable: 'ADDU'.
+# ** Error: control_unit.sv(73): (vlog-2730) Undefined variable: 'ALU_ADDU'.
+# ** Error: control_unit.sv(78): (vlog-2730) Undefined variable: 'ADD'.
+# ** Error: control_unit.sv(87): (vlog-2730) Undefined variable: 'ALU_ADD'.
+# ** Error: control_unit.sv(90): (vlog-2730) Undefined variable: 'AND'.
+# ** Error: control_unit.sv(99): near "=": syntax error, unexpected '=', expecting ++ or --
+# ** Error: control_unit.sv(102): (vlog-2730) Undefined variable: 'JR'.
+# ** Error: control_unit.sv(111): near "=": syntax error, unexpected '=', expecting ++ or --
+# ** Error: control_unit.sv(114): (vlog-2730) Undefined variable: 'NOR'.
+# ** Error: control_unit.sv(123): (vlog-2730) Undefined variable: 'ALU_NOR'.
+# ** Error: control_unit.sv(127): (vlog-2730) Undefined variable: 'OR'.
+# ** Error: control_unit.sv(136): (vlog-2730) Undefined variable: 'ALU_OR'.
+# ** Error: control_unit.sv(139): (vlog-2730) Undefined variable: 'SLT'.
+# ** Error: control_unit.sv(148): (vlog-2730) Undefined variable: 'ALU_SLT'.
+# ** Error: control_unit.sv(151): (vlog-2730) Undefined variable: 'SLTU'.
+# ** Error: control_unit.sv(160): (vlog-2730) Undefined variable: 'ALU_SLTU'.
+# ** Error: control_unit.sv(164): (vlog-2730) Undefined variable: 'SLL'.
+# ** Error: control_unit.sv(173): (vlog-2730) Undefined variable: 'ALU_SLL'.
+# ** Error: control_unit.sv(176): (vlog-2730) Undefined variable: 'SRL'.
+# ** Error: control_unit.sv(185): (vlog-2730) Undefined variable: 'ALU_SRL'.
+# ** Error: control_unit.sv(188): (vlog-2730) Undefined variable: 'SUBU'.
+# ** Error: control_unit.sv(197): (vlog-2730) Undefined variable: 'ALU_SUBU'.
+# ** Error: control_unit.sv(200): (vlog-2730) Undefined variable: 'SUB'.
+# ** Error: control_unit.sv(209): (vlog-2730) Undefined variable: 'ALU_SUB'.
+# ** Error: control_unit.sv(213): (vlog-2730) Undefined variable: 'XOR'.
+# ** Error: control_unit.sv(222): (vlog-2730) Undefined variable: 'ALU_XOR'.
+# End time: 10:16:26 on Sep 15,2016, Elapsed time: 0:00:00
+# Errors: 29, Warnings: 0
+# /package/eda/mg/questa10.3b/questasim/linux_x86_64/vlog failed.
+vlib work
+# ** Warning: (vlib-34) Library already exists at "work".
+vlog pc.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 18:33:22 on Sep 15,2016
+# vlog -reportprogress 300 pc.sv 
+# ** Error: pc.sv(1): Cannot find `include file "cpu_types_pkg.vh" in directories:
+#     /package/eda/mg/questa10.3b/questasim/ovm-2.1.2/../verilog_src/ovm-2.1.2/src, /package/eda/mg/questa10.3b/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src
+# ** Error: pc.sv(2): Cannot find `include file "pc_if.vh" in directories:
+#     /package/eda/mg/questa10.3b/questasim/ovm-2.1.2/../verilog_src/ovm-2.1.2/src, /package/eda/mg/questa10.3b/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src
+# ** Error: pc.sv(3): (vlog-13006) Could not find the package (cpu_types_pkg).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
+# ** Error: pc.sv(24): (vlog-2730) Undefined variable: 'imemload_jump'.
+# ** Error: pc.sv(29): (vlog-2730) Undefined variable: 'imemload_branch'.
+# ** Error: pc.sv(36): near "endmodule": syntax error, unexpected endmodule, expecting ';' or ','
+# End time: 18:33:22 on Sep 15,2016, Elapsed time: 0:00:00
+# Errors: 6, Warnings: 0
+# /package/eda/mg/questa10.3b/questasim/linux_x86_64/vlog failed.
+vlog pc.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 18:33:42 on Sep 15,2016
+# vlog -reportprogress 300 pc.sv 
+# ** Error: pc.sv(1): Cannot find `include file "cpu_types_pkg.vh" in directories:
+#     /package/eda/mg/questa10.3b/questasim/ovm-2.1.2/../verilog_src/ovm-2.1.2/src, /package/eda/mg/questa10.3b/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src
+# ** Error: pc.sv(2): Cannot find `include file "pc_if.vh" in directories:
+#     /package/eda/mg/questa10.3b/questasim/ovm-2.1.2/../verilog_src/ovm-2.1.2/src, /package/eda/mg/questa10.3b/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src
+# ** Error: pc.sv(3): (vlog-13006) Could not find the package (cpu_types_pkg).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
+# ** Error: pc.sv(24): (vlog-2730) Undefined variable: 'imemload_jump'.
+# ** Error: pc.sv(29): (vlog-2730) Undefined variable: 'imemload_branch'.
+# ** Error: pc.sv(36): near "endmodule": syntax error, unexpected endmodule, expecting ';' or ','
+# End time: 18:33:42 on Sep 15,2016, Elapsed time: 0:00:00
+# Errors: 6, Warnings: 0
+# /package/eda/mg/questa10.3b/questasim/linux_x86_64/vlog failed.
+vlib work
+# ** Warning: (vlib-34) Library already exists at "work".
+vlog control_unit.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 20:29:46 on Sep 15,2016
+# vlog -reportprogress 300 control_unit.sv 
+# ** Error: control_unit.sv(1): Cannot find `include file "cpu_types_pkg.vh" in directories:
+#     /package/eda/mg/questa10.3b/questasim/ovm-2.1.2/../verilog_src/ovm-2.1.2/src, /package/eda/mg/questa10.3b/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src
+# ** Error: control_unit.sv(2): Cannot find `include file "control_unit_if.vh" in directories:
+#     /package/eda/mg/questa10.3b/questasim/ovm-2.1.2/../verilog_src/ovm-2.1.2/src, /package/eda/mg/questa10.3b/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src
+# ** Error: control_unit.sv(3): (vlog-13006) Could not find the package (cpu_types_pkg).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
+# ** Error: control_unit.sv(64): near "if": syntax error, unexpected if
+# ** Error: control_unit.sv(75): (vlog-2730) Undefined variable: 'ALU_ADDU'.
+# ** Error: control_unit.sv(81): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: control_unit.sv(81): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(93): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: control_unit.sv(93): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(105): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: control_unit.sv(105): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(117): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: control_unit.sv(117): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(130): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: control_unit.sv(130): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(142): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: control_unit.sv(142): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(154): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: control_unit.sv(154): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(167): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: control_unit.sv(167): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(179): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: control_unit.sv(179): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(191): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: control_unit.sv(191): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(203): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: control_unit.sv(203): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(216): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: control_unit.sv(216): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(237): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(238): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(239): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(240): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(241): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(242): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(243): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(244): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(245): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(251): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(252): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(253): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(254): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(255): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(256): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(257): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(258): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(259): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(265): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(266): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(267): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(268): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(269): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(270): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(271): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(272): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(273): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(278): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(279): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(280): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(281): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(282): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(283): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(284): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(285): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(286): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(292): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(293): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(294): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(295): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(296): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(297): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(298): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(299): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(300): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(310): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(311): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(312): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(313): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(314): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(315): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(316): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(317): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(318): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(324): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(325): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(326): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(327): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(328): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(329): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(330): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(331): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(332): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(338): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(339): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(340): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(341): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(342): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(343): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(344): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(345): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(346): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(353): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(354): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(355): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(356): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(357): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(358): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(359): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(360): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(361): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(366): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(367): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(368): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(369): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(370): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(371): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(372): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(373): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(374): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(380): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(381): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(382): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(383): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(384): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(385): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(386): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(387): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(388): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(395): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(396): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(397): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(398): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(399): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(400): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(401): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(402): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(403): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(408): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(409): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(410): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(411): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(412): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(413): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(414): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(415): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(416): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(422): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(423): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(424): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(425): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(426): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(427): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(428): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(429): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(430): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(435): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(436): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(437): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(438): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(439): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(440): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(441): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(442): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(443): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# End time: 20:29:46 on Sep 15,2016, Elapsed time: 0:00:00
+# Errors: 164, Warnings: 0
+# /package/eda/mg/questa10.3b/questasim/linux_x86_64/vlog failed.
+clear
+# [H[2J
+clean
+vlib work
+# ** Warning: (vlib-34) Library already exists at "work".
+vlog control_unit.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 20:34:29 on Sep 15,2016
+# vlog -reportprogress 300 control_unit.sv 
+# ** Error: control_unit.sv(1): Cannot find `include file "cpu_types_pkg.vh" in directories:
+#     /package/eda/mg/questa10.3b/questasim/ovm-2.1.2/../verilog_src/ovm-2.1.2/src, /package/eda/mg/questa10.3b/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src
+# ** Error: control_unit.sv(2): Cannot find `include file "control_unit_if.vh" in directories:
+#     /package/eda/mg/questa10.3b/questasim/ovm-2.1.2/../verilog_src/ovm-2.1.2/src, /package/eda/mg/questa10.3b/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src
+# ** Error: control_unit.sv(3): (vlog-13006) Could not find the package (cpu_types_pkg).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
+# ** Error: control_unit.sv(64): (vlog-2730) Undefined variable: 'RTYPE'.
+# ** Error: control_unit.sv(66): near "begin": syntax error, unexpected begin
+# ** Error: control_unit.sv(76): (vlog-2730) Undefined variable: 'ALU_ADD'.
+# ** Error: control_unit.sv(82): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: control_unit.sv(82): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(94): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: control_unit.sv(94): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(106): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: control_unit.sv(106): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(118): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: control_unit.sv(118): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(131): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: control_unit.sv(131): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(143): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: control_unit.sv(143): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(155): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: control_unit.sv(155): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(168): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: control_unit.sv(168): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(180): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: control_unit.sv(180): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(192): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: control_unit.sv(192): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(204): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: control_unit.sv(204): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(217): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: control_unit.sv(217): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(238): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(239): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(240): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(241): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(242): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(243): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(244): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(245): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(246): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(252): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(253): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(254): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(255): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(256): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(257): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(258): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(259): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(260): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(266): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(267): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(268): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(269): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(270): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(271): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(272): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(273): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(274): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(279): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(280): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(281): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(282): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(283): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(284): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(285): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(286): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(287): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(293): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(294): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(295): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(296): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(297): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(298): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(299): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(300): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(301): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(311): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(312): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(313): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(314): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(315): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(316): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(317): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(318): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(319): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(325): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(326): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(327): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(328): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(329): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(330): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(331): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(332): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(333): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(339): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(340): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(341): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(342): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(343): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(344): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(345): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(346): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(347): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(354): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(355): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(356): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(357): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(358): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(359): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(360): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(361): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(362): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(367): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(368): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(369): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(370): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(371): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(372): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(373): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(374): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(375): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(381): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(382): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(383): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(384): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(385): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(386): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(387): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(388): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(389): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(396): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(397): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(398): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(399): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(400): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(401): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(402): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(403): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(404): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(409): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(410): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(411): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(412): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(413): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(414): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(415): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(416): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(417): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(423): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(424): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(425): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(426): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(427): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(428): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(429): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(430): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(431): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(436): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(437): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(438): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(439): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(440): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(441): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(442): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(443): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(444): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# End time: 20:34:29 on Sep 15,2016, Elapsed time: 0:00:00
+# Errors: 165, Warnings: 0
+# /package/eda/mg/questa10.3b/questasim/linux_x86_64/vlog failed.
+vlog control_unit.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 20:35:56 on Sep 15,2016
+# vlog -reportprogress 300 control_unit.sv 
+# ** Error: control_unit.sv(1): Cannot find `include file "cpu_types_pkg.vh" in directories:
+#     /package/eda/mg/questa10.3b/questasim/ovm-2.1.2/../verilog_src/ovm-2.1.2/src, /package/eda/mg/questa10.3b/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src
+# ** Error: control_unit.sv(2): Cannot find `include file "control_unit_if.vh" in directories:
+#     /package/eda/mg/questa10.3b/questasim/ovm-2.1.2/../verilog_src/ovm-2.1.2/src, /package/eda/mg/questa10.3b/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src
+# ** Error: control_unit.sv(3): (vlog-13006) Could not find the package (cpu_types_pkg).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
+# ** Error: control_unit.sv(64): (vlog-2730) Undefined variable: 'RTYPE'.
+# ** Error: control_unit.sv(66): near "begin": syntax error, unexpected begin
+# ** Error: control_unit.sv(76): (vlog-2730) Undefined variable: 'ALU_ADD'.
+# ** Error: control_unit.sv(82): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: control_unit.sv(82): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(94): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: control_unit.sv(94): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(106): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: control_unit.sv(106): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(118): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: control_unit.sv(118): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(131): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: control_unit.sv(131): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(143): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: control_unit.sv(143): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(155): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: control_unit.sv(155): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(168): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: control_unit.sv(168): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(180): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: control_unit.sv(180): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(192): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: control_unit.sv(192): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(204): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: control_unit.sv(204): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(217): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: control_unit.sv(217): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(238): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(239): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(240): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(241): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(242): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(243): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(244): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(245): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(246): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(252): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(253): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(254): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(255): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(256): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(257): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(258): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(259): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(260): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(266): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(267): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(268): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(269): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(270): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(271): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(272): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(273): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(274): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(279): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(280): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(281): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(282): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(283): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(284): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(285): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(286): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(287): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(293): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(294): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(295): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(296): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(297): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(298): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(299): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(300): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(301): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(311): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(312): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(313): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(314): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(315): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(316): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(317): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(318): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(319): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(325): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(326): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(327): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(328): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(329): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(330): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(331): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(332): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(333): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(339): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(340): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(341): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(342): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(343): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(344): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(345): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(346): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(347): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(354): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(355): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(356): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(357): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(358): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(359): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(360): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(361): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(362): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(367): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(368): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(369): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(370): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(371): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(372): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(373): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(374): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(375): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(381): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(382): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(383): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(384): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(385): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(386): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(387): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(388): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(389): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(396): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(397): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(398): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(399): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(400): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(401): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(402): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(403): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(404): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(409): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(410): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(411): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(412): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(413): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(414): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(415): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(416): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(417): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(423): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(424): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(425): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(426): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(427): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(428): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(429): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(430): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(431): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(436): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(437): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(438): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(439): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(440): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(441): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(442): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(443): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: control_unit.sv(444): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# End time: 20:35:56 on Sep 15,2016, Elapsed time: 0:00:00
+# Errors: 165, Warnings: 0
+# /package/eda/mg/questa10.3b/questasim/linux_x86_64/vlog failed.
+vlog control_unit.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 20:36:26 on Sep 15,2016
+# vlog -reportprogress 300 control_unit.sv 
+# ** Error: control_unit.sv(1): Cannot find `include file "cpu_types_pkg.vh" in directories:
+#     /package/eda/mg/questa10.3b/questasim/ovm-2.1.2/../verilog_src/ovm-2.1.2/src, /package/eda/mg/questa10.3b/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src
+# ** Error: control_unit.sv(2): Cannot find `include file "control_unit_if.vh" in directories:
+#     /package/eda/mg/questa10.3b/questasim/ovm-2.1.2/../verilog_src/ovm-2.1.2/src, /package/eda/mg/questa10.3b/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src
+# ** Error: control_unit.sv(3): (vlog-13006) Could not find the package (cpu_types_pkg).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
+# ** Error: control_unit.sv(64): (vlog-2730) Undefined variable: 'RTYPE'.
+# ** Error: control_unit.sv(68): (vlog-2730) Undefined variable: 'ADDU'.
+# ** Error: control_unit.sv(77): (vlog-2730) Undefined variable: 'ALU_ADD'.
+# ** Error: control_unit.sv(82): (vlog-2730) Undefined variable: 'ADD'.
+# ** Error: control_unit.sv(91): (vlog-2730) Undefined variable: 'ALU_ADD'.
+# ** Error: control_unit.sv(94): (vlog-2730) Undefined variable: 'AND'.
+# ** Error: control_unit.sv(103): (vlog-2730) Undefined variable: 'ALU_AND'.
+# ** Error: control_unit.sv(106): (vlog-2730) Undefined variable: 'JR'.
+# ** Error: control_unit.sv(115): (vlog-2730) Undefined variable: 'ALU_JR'.
+# ** Error: control_unit.sv(118): (vlog-2730) Undefined variable: 'NOR'.
+# ** Error: control_unit.sv(127): (vlog-2730) Undefined variable: 'ALU_NOR'.
+# ** Error: control_unit.sv(131): (vlog-2730) Undefined variable: 'OR'.
+# ** Error: control_unit.sv(140): (vlog-2730) Undefined variable: 'ALU_OR'.
+# ** Error: control_unit.sv(143): (vlog-2730) Undefined variable: 'SLT'.
+# ** Error: control_unit.sv(152): (vlog-2730) Undefined variable: 'ALU_SLT'.
+# ** Error: control_unit.sv(155): (vlog-2730) Undefined variable: 'SLTU'.
+# ** Error: control_unit.sv(164): (vlog-2730) Undefined variable: 'ALU_SLTU'.
+# ** Error: control_unit.sv(168): (vlog-2730) Undefined variable: 'SLL'.
+# ** Error: control_unit.sv(177): (vlog-2730) Undefined variable: 'ALU_SLL'.
+# ** Error: control_unit.sv(180): (vlog-2730) Undefined variable: 'SRL'.
+# ** Error: control_unit.sv(189): (vlog-2730) Undefined variable: 'ALU_SRL'.
+# ** Error: control_unit.sv(192): (vlog-2730) Undefined variable: 'SUBU'.
+# ** Error: control_unit.sv(201): (vlog-2730) Undefined variable: 'ALU_SUBU'.
+# ** Error: control_unit.sv(204): (vlog-2730) Undefined variable: 'SUB'.
+# ** Error: control_unit.sv(213): (vlog-2730) Undefined variable: 'ALU_SUB'.
+# ** Error: control_unit.sv(217): (vlog-2730) Undefined variable: 'XOR'.
+# ** Error: control_unit.sv(226): (vlog-2730) Undefined variable: 'ALU_XOR'.
+# ** Error: control_unit.sv(237): (vlog-2730) Undefined variable: 'ADDIU'.
+# ** Error: control_unit.sv(246): (vlog-2730) Undefined variable: 'ALU_ADD'.
+# ** Error: control_unit.sv(251): (vlog-2730) Undefined variable: 'ADDI'.
+# ** Error: control_unit.sv(260): (vlog-2730) Undefined variable: 'ALU_ADDI'.
+# ** Error: control_unit.sv(265): (vlog-2730) Undefined variable: 'ANDI'.
+# ** Error: control_unit.sv(274): (vlog-2730) Undefined variable: 'ALU_AND'.
+# ** Error: control_unit.sv(278): (vlog-2730) Undefined variable: 'BEQ'.
+# ** Error: control_unit.sv(287): (vlog-2730) Undefined variable: 'ALU_SUB'.
+# ** Error: control_unit.sv(292): (vlog-2730) Undefined variable: 'BNE'.
+# ** Error: control_unit.sv(301): (vlog-2730) Undefined variable: 'ALU_SUB'.
+# ** Error: control_unit.sv(310): (vlog-2730) Undefined variable: 'LW'.
+# ** Error: control_unit.sv(319): (vlog-2730) Undefined variable: 'ALU_SUB'.
+# ** Error: control_unit.sv(324): (vlog-2730) Undefined variable: 'ORI'.
+# ** Error: control_unit.sv(333): (vlog-2730) Undefined variable: 'ALU_OR'.
+# ** Error: control_unit.sv(338): (vlog-2730) Undefined variable: 'SLTI'.
+# ** Error: control_unit.sv(347): (vlog-2730) Undefined variable: 'ALU_SLT'.
+# ** Error: control_unit.sv(353): (vlog-2730) Undefined variable: 'SLTIU'.
+# ** Error: control_unit.sv(362): (vlog-2730) Undefined variable: 'ALU_SLT'.
+# ** Error: control_unit.sv(366): (vlog-2730) Undefined variable: 'SW'.
+# ** Error: control_unit.sv(375): (vlog-2730) Undefined variable: 'ALU_SUB'.
+# ** Error: control_unit.sv(380): (vlog-2730) Undefined variable: 'LL'.
+# ** Error: control_unit.sv(389): (vlog-2730) Undefined variable: 'ALU_ADD'.
+# ** Error: control_unit.sv(395): (vlog-2730) Undefined variable: 'SC'.
+# ** Error: control_unit.sv(404): (vlog-2730) Undefined variable: 'ALU_ADD'.
+# ** Error: control_unit.sv(408): (vlog-2730) Undefined variable: 'XORI'.
+# ** Error: control_unit.sv(417): (vlog-2730) Undefined variable: 'ALU_XOR'.
+# ** Error: control_unit.sv(422): (vlog-2730) Undefined variable: 'J'.
+# ** Error: control_unit.sv(431): (vlog-2730) Undefined variable: 'ALU_ADD'.
+# ** Error: control_unit.sv(435): (vlog-2730) Undefined variable: 'JAL'.
+# ** Error: control_unit.sv(444): (vlog-2730) Undefined variable: 'ALU_ADD'.
+# End time: 20:36:26 on Sep 15,2016, Elapsed time: 0:00:00
+# Errors: 60, Warnings: 0
+# /package/eda/mg/questa10.3b/questasim/linux_x86_64/vlog failed.
+vlog control_unit.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 20:37:04 on Sep 15,2016
+# vlog -reportprogress 300 control_unit.sv 
+# ** Error: control_unit.sv(1): Cannot find `include file "cpu_types_pkg.vh" in directories:
+#     /package/eda/mg/questa10.3b/questasim/ovm-2.1.2/../verilog_src/ovm-2.1.2/src, /package/eda/mg/questa10.3b/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src
+# ** Error: control_unit.sv(2): Cannot find `include file "control_unit_if.vh" in directories:
+#     /package/eda/mg/questa10.3b/questasim/ovm-2.1.2/../verilog_src/ovm-2.1.2/src, /package/eda/mg/questa10.3b/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src
+# ** Error: control_unit.sv(3): (vlog-13006) Could not find the package (cpu_types_pkg).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
+# ** Error: control_unit.sv(64): (vlog-2730) Undefined variable: 'RTYPE'.
+# ** Error: control_unit.sv(68): (vlog-2730) Undefined variable: 'ADDU'.
+# ** Error: control_unit.sv(77): (vlog-2730) Undefined variable: 'ALU_ADD'.
+# ** Error: control_unit.sv(82): (vlog-2730) Undefined variable: 'ADD'.
+# ** Error: control_unit.sv(91): (vlog-2730) Undefined variable: 'ALU_ADD'.
+# ** Error: control_unit.sv(94): (vlog-2730) Undefined variable: 'AND'.
+# ** Error: control_unit.sv(103): (vlog-2730) Undefined variable: 'ALU_AND'.
+# ** Error: control_unit.sv(106): (vlog-2730) Undefined variable: 'JR'.
+# ** Error: control_unit.sv(115): (vlog-2730) Undefined variable: 'ALU_JR'.
+# ** Error: control_unit.sv(118): (vlog-2730) Undefined variable: 'NOR'.
+# ** Error: control_unit.sv(127): (vlog-2730) Undefined variable: 'ALU_NOR'.
+# ** Error: control_unit.sv(131): (vlog-2730) Undefined variable: 'OR'.
+# ** Error: control_unit.sv(140): (vlog-2730) Undefined variable: 'ALU_OR'.
+# ** Error: control_unit.sv(143): (vlog-2730) Undefined variable: 'SLT'.
+# ** Error: control_unit.sv(152): (vlog-2730) Undefined variable: 'ALU_SLT'.
+# ** Error: control_unit.sv(155): (vlog-2730) Undefined variable: 'SLTU'.
+# ** Error: control_unit.sv(164): (vlog-2730) Undefined variable: 'ALU_SLTU'.
+# ** Error: control_unit.sv(168): (vlog-2730) Undefined variable: 'SLL'.
+# ** Error: control_unit.sv(177): (vlog-2730) Undefined variable: 'ALU_SLL'.
+# ** Error: control_unit.sv(180): (vlog-2730) Undefined variable: 'SRL'.
+# ** Error: control_unit.sv(189): (vlog-2730) Undefined variable: 'ALU_SRL'.
+# ** Error: control_unit.sv(192): (vlog-2730) Undefined variable: 'SUBU'.
+# ** Error: control_unit.sv(201): (vlog-2730) Undefined variable: 'ALU_SUBU'.
+# ** Error: control_unit.sv(204): (vlog-2730) Undefined variable: 'SUB'.
+# ** Error: control_unit.sv(213): (vlog-2730) Undefined variable: 'ALU_SUB'.
+# ** Error: control_unit.sv(217): (vlog-2730) Undefined variable: 'XOR'.
+# ** Error: control_unit.sv(226): (vlog-2730) Undefined variable: 'ALU_XOR'.
+# ** Error: control_unit.sv(237): (vlog-2730) Undefined variable: 'ADDIU'.
+# ** Error: control_unit.sv(246): (vlog-2730) Undefined variable: 'ALU_ADD'.
+# ** Error: control_unit.sv(251): (vlog-2730) Undefined variable: 'ADDI'.
+# ** Error: control_unit.sv(260): (vlog-2730) Undefined variable: 'ALU_ADDI'.
+# ** Error: control_unit.sv(265): (vlog-2730) Undefined variable: 'ANDI'.
+# ** Error: control_unit.sv(274): (vlog-2730) Undefined variable: 'ALU_AND'.
+# ** Error: control_unit.sv(278): (vlog-2730) Undefined variable: 'BEQ'.
+# ** Error: control_unit.sv(287): (vlog-2730) Undefined variable: 'ALU_SUB'.
+# ** Error: control_unit.sv(292): (vlog-2730) Undefined variable: 'BNE'.
+# ** Error: control_unit.sv(301): (vlog-2730) Undefined variable: 'ALU_SUB'.
+# ** Error: control_unit.sv(310): (vlog-2730) Undefined variable: 'LW'.
+# ** Error: control_unit.sv(319): (vlog-2730) Undefined variable: 'ALU_SUB'.
+# ** Error: control_unit.sv(324): (vlog-2730) Undefined variable: 'ORI'.
+# ** Error: control_unit.sv(333): (vlog-2730) Undefined variable: 'ALU_OR'.
+# ** Error: control_unit.sv(338): (vlog-2730) Undefined variable: 'SLTI'.
+# ** Error: control_unit.sv(347): (vlog-2730) Undefined variable: 'ALU_SLT'.
+# ** Error: control_unit.sv(353): (vlog-2730) Undefined variable: 'SLTIU'.
+# ** Error: control_unit.sv(362): (vlog-2730) Undefined variable: 'ALU_SLT'.
+# ** Error: control_unit.sv(366): (vlog-2730) Undefined variable: 'SW'.
+# ** Error: control_unit.sv(375): (vlog-2730) Undefined variable: 'ALU_SUB'.
+# ** Error: control_unit.sv(380): (vlog-2730) Undefined variable: 'LL'.
+# ** Error: control_unit.sv(389): (vlog-2730) Undefined variable: 'ALU_ADD'.
+# ** Error: control_unit.sv(395): (vlog-2730) Undefined variable: 'SC'.
+# ** Error: control_unit.sv(404): (vlog-2730) Undefined variable: 'ALU_ADD'.
+# ** Error: control_unit.sv(408): (vlog-2730) Undefined variable: 'XORI'.
+# ** Error: control_unit.sv(417): (vlog-2730) Undefined variable: 'ALU_XOR'.
+# ** Error: control_unit.sv(422): (vlog-2730) Undefined variable: 'J'.
+# ** Error: control_unit.sv(431): (vlog-2730) Undefined variable: 'ALU_ADD'.
+# ** Error: control_unit.sv(435): (vlog-2730) Undefined variable: 'JAL'.
+# ** Error: control_unit.sv(444): (vlog-2730) Undefined variable: 'ALU_ADD'.
+# End time: 20:37:04 on Sep 15,2016, Elapsed time: 0:00:00
+# Errors: 60, Warnings: 0
+# /package/eda/mg/questa10.3b/questasim/linux_x86_64/vlog failed.
+vlib work
+# ** Warning: (vlib-34) Library already exists at "work".
+vlog request_unit.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 11:25:50 on Sep 16,2016
+# vlog -reportprogress 300 request_unit.sv 
+# ** Error: request_unit.sv(1): Cannot find `include file "cpu_types_pkg.vh" in directories:
+#     /package/eda/mg/questa10.3b/questasim/ovm-2.1.2/../verilog_src/ovm-2.1.2/src, /package/eda/mg/questa10.3b/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src
+# ** Error: request_unit.sv(2): Cannot find `include file "request_unit_if.vh" in directories:
+#     /package/eda/mg/questa10.3b/questasim/ovm-2.1.2/../verilog_src/ovm-2.1.2/src, /package/eda/mg/questa10.3b/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src
+# ** Error: request_unit.sv(3): (vlog-13006) Could not find the package (cpu_types_pkg).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
+# ** Error: request_unit.sv(16): (vlog-2730) Undefined variable: 'ff1'.
+# ** Error: request_unit.sv(17): (vlog-2730) Undefined variable: 'ff2'.
+# ** Error: request_unit.sv(20): (vlog-2730) Undefined variable: 'ff1'.
+# ** Error: request_unit.sv(20): (vlog-2730) Undefined variable: 'nff1'.
+# ** Error: request_unit.sv(21): (vlog-2730) Undefined variable: 'ff2'.
+# ** Error: request_unit.sv(21): (vlog-2730) Undefined variable: 'nff2'.
+# ** Error: request_unit.sv(26): near "always_comb": syntax error, unexpected always_comb
+# ** Error: request_unit.sv(32): (vlog-2730) Undefined variable: 'dmemren'.
+# ** Error: request_unit.sv(32): (vlog-2730) Undefined variable: 'memread'.
+# ** Error: request_unit.sv(35): (vlog-2730) Undefined variable: 'dhit'.
+# ** Error: request_unit.sv(37): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# End time: 11:25:50 on Sep 16,2016, Elapsed time: 0:00:00
+# Errors: 14, Warnings: 0
+# /package/eda/mg/questa10.3b/questasim/linux_x86_64/vlog failed.

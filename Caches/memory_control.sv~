@@ -1,0 +1,240 @@
+/*
+  Eric Villasenor
+  evillase@gmail.com
+
+  this block is the coherence protocol
+  and artibtration for ram
+*/
+
+// interface include
+`include "cache_control_if.vh"
+
+// memory types
+`include "cpu_types_pkg.vh"
+
+module memory_control (
+  input CLK, nRST,
+  cache_control_if.cc ccif
+);
+  // type import
+  import cpu_types_pkg::*;
+
+  // number of cpus for cc
+  parameter CPUS = 2;
+  parameter cpid = 0;//parameter or logic?	
+	
+	assign ccif.ramWEN = ccif.dWEN[cpid];
+	assign ccif.ramREN = (((ccif.dREN[cpid] == 1) || (ccif.iREN[cpid] == 1)) && (ccif.dWEN[cpid] == 0)) ? 1 : 0;
+	assign ccif.iload = /* ccif.ramload;*/ (ccif.iREN[cpid] == 1 && ccif.ramload != 32'hbad1bad1) ? ccif.ramload : 0;
+	assign ccif.dload = /* ccif.ramload;*/ (ccif.dREN[cpid] == 1 && ccif.ramload != 32'hbad1bad1) ? ccif.ramload : 0;
+	assign ccif.ramstore = (ccif.dWEN[cpid] == 1) ? ccif.dstore : 0; //ccif.dstore[cpid]; // (ccif.dWEN[cpid] == 1) ? ccif.dstore[cpid] : 0;
+	assign ccif.ramaddr = (ccif.dREN[cpid] == 1 || ccif.dWEN[cpid] == 1) ? ccif.daddr : /*ccif.iaddr;*/ ((ccif.iREN[cpid] == 1) ? ccif.iaddr : 0);
+
+
+always_comb
+begin
+
+//Set up default values
+// ccif.iwait[cpid] = 1;
+// ccif.dwait[cpid] = 1;
+/* ccif.ramstore = 0;
+ccif.dload[cpid] = 0;
+ccif.iload[cpid] = 0;
+ccif.ramaddr = 0;
+ccif.ramREN = 0;
+ccif.ramWEN = 0; */
+// ccif.ccwrite = 0;
+// ccif.cctrans = 0;
+// ccif.ccwait = 0;
+// ccif.ccinv = 0;
+// ccif.ccsnoopaddr = 0;
+
+cpid = ccif.dWEN[cpid];
+//ramstate cases
+/*
+
+*/
+	//case (cstate)
+	always_comb 
+		begin
+			IDLE:
+			begin
+
+				if(cctrans[0]==1||cctrans[1]==1)
+				begin
+					nstate=SNOOP;
+				end
+
+				if(dWEN==1)
+				begin
+					nstate=WB1;
+				end
+			end
+			
+			WB1:
+			begin
+				
+				
+				ramaddr = daddr[cpid];
+				ramstore = dstore[cpid];
+
+				if(dwait[cpid] == 1)
+				begin
+					nstate = WB1;
+				end
+				
+				else
+				begin
+					ramstate=ACCESS;
+					nstate = WB2;
+				end
+			end
+			end
+
+			WB2:
+			begin
+			
+			
+				dcache.daddr = daddr[cpid];
+				dcache.dstore = dstore[cpid];
+			
+
+
+				
+				if(dwait[cpid] == 1)
+				begin
+					ramstate=ACCESS;
+					nstate = IDLE;
+				end
+			end
+
+			SNOOP:
+			begin
+				if(cctrans[0]==1)
+				begin
+					ccwait[1]=1;
+					if(ccwrite[0]==1)
+					begin
+						n_ccinv[1]=1;
+					end
+					if((cctrans[1]==1)&&(ccwrite[1]==0))
+					begin
+						ramstate=ACCESS;
+						nstate=LD1;
+					end
+					if((cctrans[1]==1)&&(ccwrite[1]==1))
+					begin
+						ramstate=ACCESS;
+						nstate=C1;
+					end
+				end
+
+				if(cctrans[1]==1)
+				begin
+					ccwait[0]=1;
+					if(ccwrite[1]==1)
+					begin
+						n_ccinv[0]=1;
+					end
+					if((cctrans[0]==1)&&(ccwrite[0]==0))
+					begin
+						ramstate=ACCESS;
+						nstate=LD1;
+					end
+					if((cctrans[0]==1)&&(ccwrite[0]==1))
+					begin
+						ramstate=ACCESS;
+						nstate=C1;
+					end
+				end
+
+			end
+
+			C1:
+			begin
+				if(cctrans[0]==1)
+				begin
+					ccif.dload=dmemstore[1];//ccif.dload = ccif.ccsnoopaddr[cpid];
+					nstate=C2;
+				end
+
+				if(cctrans[1]==1)
+				begin
+					ccif.dload=dmemstore[0];//ccif.dload = ccif.ccsnoopaddr[cpid];
+					nstate=C2;
+				end
+			end
+
+			C2:
+			begin
+				if(cctrans[0]==1)
+				begin
+					ccif.dload=dmemstore[0];//ccif.dload = ccif.ccsnoopaddr[cpid];
+					nstate=IDLE;
+				end
+
+				if(cctrans[1]==1)
+				begin
+					ccif.dload=dmemstore[1];//ccif.dload = ccif.ccsnoopaddr[cpid];
+					nstate=IDLE;
+				end
+			end
+
+			LD1:
+			begin
+				
+				if(dcache.dwait == 1)
+				begin
+					nstate = LD1;
+				end
+				else
+				begin
+					
+					nstate = LD2;
+				end
+
+			
+				
+				dREN[cpid] = 1; 
+				dcache.daddr = dcif.dmemaddr;
+				dcache.dWEN = 0;
+
+				addr_curr = dcachef_t'(dcif.dmemaddr);
+				n_cc_dcache[dcache_in_addr.idx].way[cc_dcache[dcache_in_addr.idx].lru].dirty_blk = 0;// won't care about dirty ?
+				ccif.dload[cpid] = dcache.dload;//n_cc_dcache[dcache_in_addr.idx].way[cc_dcache[dcache_in_addr.idx].lru].data_blk[0] = dcache.dload;
+			end
+
+			LD2:
+			begin
+				//hit_cnt_tmp = hit_counter;
+
+				if(dcache.dwait == 1)
+				begin
+					nstate = LD2;
+				end
+				else
+				begin
+					//hit_cnt_tmp = hit_counter - 1;
+					nstate = IDLE;
+					addr_curr = dcachef_t'(dcif.dmemaddr);
+					n_cc_dcache[dcache_in_addr.idx].way[cc_dcache[dcache_in_addr.idx].lru].tag = addr_curr.tag;
+					//cc_dcache[dcache_in_addr.idx].way[1].cache_data_blk2.blkoff = 1;
+					// cc_dcache[dcache_in_addr.idx].way[1].data_blk[dcache_in_addr.block_offset]=1;
+					n_cc_dcache[dcache_in_addr.idx].way[cc_dcache[dcache_in_addr.idx].lru].valid_blk = 1;
+					n_cc_dcache[dcache_in_addr.idx].way[cc_dcache[dcache_in_addr.idx].lru].dirty_blk = 0;
+				end
+
+				// Load Word 1 from mem
+				dcache.dREN = 1;
+				dcache.daddr = dcif.dmemaddr + 4;
+				dcache.dWEN = 0;
+
+				
+				n_cc_dcache[dcache_in_addr.idx].way[cc_dcache[dcache_in_addr.idx].lru].data_blk[1] = dcache.dload;
+
+
+			end
+	
+end
+
+endmodule
